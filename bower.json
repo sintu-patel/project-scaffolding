@@ -1,0 +1,23 @@
+{
+  "name": "TUI Front End",
+  "description": "It contains tui front end project",
+  "main": "index.js",
+  "authors": [
+    "Sintu"
+  ],
+  "license": "Free",
+  "keywords": [
+    "Front",
+    "end"
+  ],
+  "moduleType": [],
+  "homepage": "www.htmlmatrix.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
