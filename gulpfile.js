@@ -91,7 +91,10 @@ gulp.task('live', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch(['dev/**/*'], ['live', 'compass', 'javascript']);
+  gulp.watch('dev/sass/*.scss', ['scssLint', 'compass'], 'live');
+  gulp.watch('dev/**/*.hbs', ['w3cjs', 'grunt-assemble', 'copyHtmlFolder'], 'live');
+  gulp.watch('dev/**/*.js', ['jsCs', 'jsHint', 'javascript'], 'live');
 });
 
-gulp.task('startServer', ['connect', 'watch', 'grunt-assemble', 'copyHtmlFolder']);
+
+gulp.task('startServer', ['connect', 'watch']);
